@@ -7,7 +7,7 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    cursor: url("img/cursor.PNG"), auto;
+    cursor: url("img/0.PNG"), auto;
 }
 
 .hidden{
@@ -33,7 +33,7 @@ body{
 }
 button{
     font-family: "Pixelify Sans", serif;
-    cursor: url("img/0.png"), auto;
+    cursor: url("img/0.PNG"), auto;
 
 }
 
