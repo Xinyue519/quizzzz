@@ -93,7 +93,8 @@ function nextQuestion() {
 
 function showConfession() {
     gameClass.classList.add("hidden");
-    document.getElementById("loadContainer").style.display = "block";
+    loadClass.classList.remove("hidden");
+    loadClass.classList.add("show");
     setTimeout(() => {
         document.getElementById("loadContainer").style.display = "none";
         document.getElementById("confessionContainer").style.display = "block";

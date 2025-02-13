@@ -7,7 +7,7 @@ body{
     align-items: center;
     flex-direction: column;
     height: 100vh;
-    cursor: url("img/0.PNG"), auto;
+    cursor: url("img/cursor.PNG"), auto;
 }
 
 .hidden{
@@ -33,7 +33,7 @@ body{
 }
 button{
     font-family: "Pixelify Sans", serif;
-    cursor: url("img/0.PNG"), auto;
+    cursor: url("img/cursor.PNG"), auto;
 
 }
 
@@ -46,11 +46,21 @@ button{
     margin: 0 auto;
     max-width: 80%;
     height: auto;
+    animation: swing 2500ms infinite;
 }
+
+@keyframes swing {
+    50%{transform:translateY(3px)}
+    100%{transform: translateY(0px);}
+
+} 
 #startTitle{
     font-size: 55px;
     text-shadow:  1px 1px 2px #ffffff;
+    animation: swing 2500ms infinite;
 }
+
+
 #option{
     color: #f9b8db;
     background-color: white;
@@ -161,11 +171,17 @@ animation: floatUp 1s linear;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%); 
+    flex-direction: column;
     text-align: center;
+    align-items: center;
+}
+
+.show{
+    display: flex;
 }
 
 .spinner {
-    border: 16px solid #f3f3f3; 
+    border: 16px solid white; 
     border-top: 16px solid #f679b6; 
     border-radius: 50%;
     width: 50px;
